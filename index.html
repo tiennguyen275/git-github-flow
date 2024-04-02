@@ -1,36 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" async></script>
 <title>Countdown</title>
 </head>
 <body>
 
-<div id="countdown"></div>
-
-<script>
-  // Lấy phần tử div bằng id
-  var countdownElement = document.getElementById("countdown");
-
-  // Hàm bắt đầu đếm ngược từ 4 đến 0
-function startCountdown() {
-  for (var count = 4; count >= 0; count--) {
-      // Sử dụng IIFE (Immediately Invoked Function Expression) để tạo một closure
-    (function(count) {
-      setTimeout(function() {
-        countdownElement.innerText = count;
-      if (count === 0) {
-        countdownElement.innerText = "BOOOM!";
-      }
-      }, (4 - count) * 1000); // Sử dụng setTimeout để hiển thị mỗi số sau một khoảng thời gian
-    })(count); // Truyền giá trị của biến count vào hàm closure
-  }
-}
-
-  // Gọi hàm bắt đầu đếm ngược
-  startCountdown();
-</script>
+  <button id="startButton">Start Countdown</button>
+  <div id="countdown"></div>
 
 </body>
 </html>

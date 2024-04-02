@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#countdown, #startButton {
+  margin: 10px;
+}
+
+#countdown {
+  color:red;
+  background-color:lightblue;
+  border-radius: 7vmin;
+}
+
+#startButton {
+  border-radius: 3.5vmin;
+  border: none;
+  background-color:gray;
+  color:whitesmoke
+}
+
+#startButton:hover{
+  background-color:darkgrey;
+  color:lightblue;
+  border-radius: 3.5vmin;
+  cursor: pointer;
+}
+
+#startButton:active{
+  background-color: darkgrey;
+  color: lightblue;
+  border-radius: 3.5vmin;
+  cursor: pointer;
+  transform: translateY(4px);
+  box-shadow: 0 5px #666;
+}
